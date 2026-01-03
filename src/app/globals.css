@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-libre: 'Libre Baskerville', serif;
+  --font-yuji: 'Yuji Boku', serif;
+  --font-badeen: 'Bodoni Moda', serif;
+
+  --font-mountains: 'Mountains of Christmas', cursive;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-rubik-gem: 'Rubik Gemstones', cursive;
+  --font-amatic: 'Amatic SC', cursive;
+  --font-berkshire: 'Berkshire Swash', cursive;
+  --font-bangers: 'Bangers', cursive;
+  --font-italianno: 'Italianno', cursive;
+  --font-nycd: 'Nothing You Could Do', cursive;
+  --font-rampart: 'Rampart One', cursive;
+  --font-sunrise: 'Waiting for the Sunrise', cursive;
+  --font-bungee: 'Bungee Inline', cursive;
+  --font-sarina: 'Sarina', cursive;
+}
+
+
+.shutter-panel {
+  flex: 1;
+  transform: translateY(0%);
+}
+
+/* Mobile & Tablet → single shutter */
+@media (max-width: 1023px) {
+  .shutter-panel:not(:first-child) {
+    display: none;
+  }
+
+  .shutter-panel {
+    flex: 1;
+    width: 100%;
+  }
+}
+
