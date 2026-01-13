@@ -28,7 +28,7 @@ export default function Loader({ onFinish }) {
     fonts.forEach((font) => {
       fontTL.to(textRef.current, {
         fontFamily: font.css,
-        duration: 0.4,
+        duration: 0.1,
         ease: "power2.out",
         onStart: () => setActiveFont(font.label),
       });
@@ -49,7 +49,7 @@ export default function Loader({ onFinish }) {
     /* PROGRESS BAR */
     gsap.to(progressRef.current, {
       width: "100%",
-      duration: 4,
+      duration: 2.5,
       ease: "power2.out",
       onUpdate: function () {
         setProgress(Math.round(this.progress() * 100));
@@ -62,7 +62,7 @@ export default function Loader({ onFinish }) {
     const isDesktop = window.innerWidth >= 1024;
 
     const shutterTL = gsap.timeline({
-      delay: 4.2,
+      delay: 4,
       onComplete: () => {
         onFinish?.();
       },

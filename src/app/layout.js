@@ -23,6 +23,8 @@ import {
 
 import "./globals.css";
 import LoaderWrapper from "@/Comman/LoaderWrapper";
+import Header from "@/Layout/Header/Header";
+import Footer from "@/Layout/Footer/Footer";
 
 /* OLD FONTS (AS IT IS) */
 export const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -166,7 +168,9 @@ export default function RootLayout({ children }) {
   `}
 >
       <LoaderWrapper>
+        <Header />
         {children}
+        <Footer />
         </LoaderWrapper>
       </body>
     </html>

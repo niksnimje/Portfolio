@@ -1,8 +1,9 @@
-export default function Home() {
+import Home from "@/Component/Home/Index";
+
+export default function page() {
   return (
-    <section className="min-h-screen">
-      {/* HERO SECTION */}
-      <h1 className="text-[10vw]">Niks Nimje</h1>
-    </section>
+    <>
+      <Home />
+    </>
   );
 }

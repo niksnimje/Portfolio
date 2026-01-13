@@ -28,7 +28,7 @@
         fonts.forEach((font) => {
         fontTL.to(textRef.current, {
             fontFamily: font.css,
-            duration: 0.4,
+            duration: 0.2,
             ease: "power2.out",
             onStart: () => setActiveFont(font.label),
         });
@@ -50,7 +50,7 @@
         /* PROGRESS BAR */
         gsap.to(progressRef.current, {
         width: "100%",
-        duration: 4,
+        duration: 2.5,
         ease: "power2.out",
         onUpdate: function () {
             setProgress(Math.round(this.progress() * 100));
@@ -63,7 +63,7 @@
   const isDesktop = window.innerWidth >= 1024;
 
   const shutterTL = gsap.timeline({
-    delay: 4.2,
+    delay: 2.5,
     onComplete: () => {
       onFinish?.(); // 🔥 LOADER HIDE
     },
@@ -136,10 +136,10 @@
     ref={containerRef}
     className="absolute inset-0 z-10 flex "
     >
-    <div className="shutter-panel bg-[#FAFAF8]"></div>
-    <div className="shutter-panel bg-[#F6DADA]"></div>
-    <div className="shutter-panel bg-[#FAFAF8]"></div>
-    <div className="shutter-panel bg-[#F6DADA]"></div>
+    <div className="shutter-panel bg-white"></div>
+    <div className="shutter-panel bg-white"></div>
+    <div className="shutter-panel bg-white"></div>
+    <div className="shutter-panel bg-white"></div>
     </div>
 
         </>
