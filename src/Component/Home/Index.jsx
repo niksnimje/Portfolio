@@ -5,7 +5,10 @@ import TextAnimation from '@/Comman/TextAnimation'
 function Home() {
   return (
     <>
-        <HeroSection />
+        {/* <HeroSection /> */}
+        <TextAnimation text="Interested in working together?" />
+        <TextAnimation text="Interested in working together?" />
+        <TextAnimation text="Interested in working together?" />
         <TextAnimation text="Interested in working together?" />
     </>
   )

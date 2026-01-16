@@ -6,7 +6,7 @@ import Logo from "../../../public/assets/Header/N_Logo.png"
 
 const Header = () => {
   return (
-    <header className="absolute top-0 left-0 w-full z-50 ">
+    <header className="absolute top-0 left-0 w-full z-0 ">
       <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between bg-pink-300">
 
         {/* Logo Image */}

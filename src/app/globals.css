@@ -65,3 +65,19 @@ body {
     width: 100%;
   }
 }
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Internet Explorer (old) */
+body {
+  -ms-overflow-style: none;
+}
